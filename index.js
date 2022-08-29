@@ -1,30 +1,11 @@
-let quien = [
-    "el perro",
-    "su tortuga",
-    "mi abuela",
-    "el pajarito"
-];
+var pronoun = ['nosotrossomos','ustedesson','nuestrosamigosson', 'mis'];
+var adj = ['grandes', 'enormes', 'mini' ];
+var noun = ['dibujantes.com','elefantes.net', 'cocineros.es'];
 
-let que = [
-    "se comió mi tarea",
-    "se enojó",
-    "aplastó el pastel",
-    "rompió"
-];
-
-let cuando = [
-    "antes de la clase",
-    "justo a tiempo",
-    "cuando terminé",
-    "durante el almuerzo",
-    "mientras oraba"
-];
-
-
-let frase1 = quien[Math.floor(Math.random()*quien.length)];
-let frase2 = que[Math.floor(Math.random()*que.length)];
-let frase3 = cuando[Math.floor(Math.random()*cuando.length)];
-
-let excusa = frase1+" "+frase2+" "+frase3
-
-console.log(excusa)
+for (i=0; i<pronoun.length; i++){
+    for (k=0; k<adj.length; k++){
+        for (y=0; y<noun.length; y++){
+            console.log(pronoun[i]+adj[k]+noun[y])
+        }
+    }
+}
